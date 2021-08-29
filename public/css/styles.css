@@ -1,0 +1,559 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+  .containers {
+
+    padding-bottom: 20px;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  
+  .footer-padding {
+      padding-bottom: 60px;
+  }
+  
+  .footer {
+      position: absolute;
+      text-align: center;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #1abc9c;
+  }
+  
+  .footer p {
+      margin-top: 25px;
+      font-size: 12px;
+    color: #fff;
+  }
+
+  .img
+  {
+    
+    width: 100%;
+    cursor: pointer;
+    min-height: 294px;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+    opacity: 1;
+  }
+  
+  .product-card
+  {
+    background-color: #fff;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+    padding: 0 0 14px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 210px;
+    flex: 1 0 210px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 40px 0 0 40px;
+    outline: 1px solid #e9e9eb;
+    position: relative;
+    height: 425px;
+    max-width: 220px;
+  }
+
+  body, html {
+    background-color: #EEE;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  li{
+      list-style: none;
+  }
+  
+  .skill-card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 20px;
+    margin: 20px;
+    width: 15em;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+  }
+  .skill-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .skill-card:hover .skill-card__header {
+    height: 40px;
+  }
+  .skill-card:hover .skill-card__header .skill-card__icon {
+    transform: translateX(-50%) translateY(-50%) scale(4);
+  }
+  .skill-card:hover .skill-card__body {
+    height: 170px;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li {
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
+    transition-duration: 0.5s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(1) {
+    transition-delay: 0.25s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(2) {
+    transition-delay: 0.5s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(3) {
+    transition-delay: 0.75s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(4) {
+    transition-delay: 1s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(5) {
+    transition-delay: 1.25s;
+  }
+  .skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(6) {
+    transition-delay: 1.5s;
+  }
+  .skill-card .skill-card__header {
+    position:relative;
+    /* background-color: #eb6c3f; */
+    background-color: rgb(190, 174, 174);
+    height: 170px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+  }
+  .skill-card .skill-card__header .skill-card__icon {
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translateY(-50%) translateX(-50%); */
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+  }
+  .skill-card .skill-card__body {
+    height: 40px;
+    transition: height 0.5s;
+    overflow: hidden;
+    
+  }
+  .skill-card .skill-card__body .skill-card__title {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .skill-card .skill-card__body .skill-card__duration {
+    color: #9E9E9E;
+    font-style: italic;
+    left: 0%;
+  }
+  .skill-card .skill-card__body .skill-card__knowledge {
+    margin-top: 10px;
+    color: #424242;
+  }
+  .skill-card .skill-card__body .skill-card__knowledge li {
+    margin-top: 5px;
+    transition-duration: 0;
+    transition-delay: 0.5s;
+    transform: translateX(-100%);
+  }
+
+  /* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .rows{
+      /* margin: 0 -5px; */
+      padding-top: 10%;
+      margin-left: -5%;
+    }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  /* ---------------------------------------------------------------------------------------------------------------------- */
+
+  /* Recent Orders Styles */
+  .product-content {
+    border: 2px solid #dfe5e9;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    background: #fff;
+    padding: 4px;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+}
+
+.product-content .carousel-control.left {
+    margin-left: 0
+}
+
+.product-content .product-image {
+    background-color: #fff;
+    display: block;
+    min-height: 238px;
+    overflow: hidden;
+    position: relative
+}
+
+.product-content .product-image img{
+
+  min-width: 50px;
+  min-height: 50px;
+  height: 230px;
+  width: 228px;
+}
+
+
+.product-content .product-deatil {
+    border-bottom: 1px solid #dfe5e9;
+    padding-bottom: 17px;
+    padding-left: 16px;
+    padding-top: 16px;
+    position: relative;
+    background: #fff
+}
+
+.product-content .product-deatil h5 a {
+    color: #2f383d;
+    font-size: 15px;
+    line-height: 19px;
+    text-decoration: none;
+    padding-left: 0;
+    margin-left: 0
+}
+
+.product-content .product-deatil h5 a span {
+    color: #9aa7af;
+    display: block;
+    font-size: 13px
+}
+
+.product-content .product-deatil span.tag1 {
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    height: 50px;
+    padding: 13px 0;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    width: 50px
+}
+
+.product-content .product-deatil span.sale {
+    background-color: #21c2f8
+}
+
+.product-content .product-deatil span.discount {
+    background-color: #71e134
+}
+
+.product-content .product-deatil span.hot {
+    background-color: #fa9442
+}
+
+.product-content .description {
+    font-size: 12.5px;
+    line-height: 20px;
+    padding: 10px 14px 16px 19px;
+    background: #fff
+}
+
+.product-content .product-info {
+    padding: 11px 19px 10px 20px
+}
+
+.product-content .product-info a.add-to-cart {
+    color: #2f383d;
+    font-size: 13px;
+    padding-left: 16px
+}
+
+.product-content name.a {
+    padding: 5px 10px;
+    margin-left: 16px
+}
+
+.product-info.smart-form .btn {
+    padding: 6px 12px;
+    margin-left: 12px;
+    margin-top: -10px
+}
+
+.product-entry .product-deatil {
+    border-bottom: 1px solid #dfe5e9;
+    padding-bottom: 17px;
+    padding-left: 16px;
+    padding-top: 16px;
+    position: relative
+}
+
+.product-entry .product-deatil h5 a {
+    color: #2f383d;
+    font-size: 15px;
+    line-height: 19px;
+    text-decoration: none
+}
+
+.product-entry .product-deatil h5 a span {
+    color: #9aa7af;
+    display: block;
+    font-size: 13px
+}
+
+.load-more-btn {
+    background-color: #21c2f8;
+    border-bottom: 2px solid #037ca5;
+    border-radius: 2px;
+    border-top: 2px solid #0cf;
+    margin-top: 20px;
+    padding: 9px 0;
+    width: 100%
+}
+
+.product-block .product-deatil p.price-container span,
+.product-content .product-deatil p.price-container span,
+.product-entry .product-deatil p.price-container span,
+.shipping table tbody tr td p.price-container span,
+.shopping-items table tbody tr td p.price-container span {
+    color: #21c2f8;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    line-height: 20px
+}
+
+.product-info.smart-form .rating label {
+    margin-top: 0
+}
+
+.product-wrap .product-image span.tag2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 11px;
+    text-align: center
+}
+
+.product-wrap .product-image span.sale {
+    background-color: #57889c
+}
+
+.product-wrap .product-image span.hot {
+    background-color: #a90329
+}
+
+.shop-btn {
+    position: relative
+}
+
+.shop-btn>span {
+    background: #a90329;
+    display: inline-block;
+    font-size: 10px;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 2px 4px 3px!important;
+    text-align: center;
+    line-height: normal;
+    width: 19px;
+    top: -7px;
+    left: -7px
+}
+
+.description-tabs {
+    padding: 30px 0 5px!important
+}
+
+.description-tabs .tab-content {
+    padding: 10px 0
+}
+
+.product-deatil {
+    padding: 30px 30px 50px
+}
+
+.product-deatil hr+.description-tabs {
+    padding: 0 0 5px!important
+}
+
+.product-deatil .carousel-control.left,
+.product-deatil .carousel-control.right {
+    background: none!important
+}
+
+.product-deatil .glyphicon {
+    color: #3276b1
+}
+
+.product-deatil .product-image {
+    border-right: 0px solid #fff !important
+}
+
+.product-deatil .name {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.product-deatil .name small {
+    display: block
+}
+
+.product-deatil .name a {
+    margin-left: 0
+}
+
+.product-deatil .price-container {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 300
+}
+
+.product-deatil .price-container small {
+    font-size: 12px
+}
+
+.product-deatil .fa-2x {
+    font-size: 16px!important
+}
+
+.product-deatil .fa-2x>h5 {
+    font-size: 12px;
+    margin: 0
+}
+
+.product-deatil .fa-2x+a,
+.product-deatil .fa-2x+a+a {
+    font-size: 13px
+}
+
+.product-deatil .certified {
+    margin-top: 10px
+}
+
+.product-deatil .certified ul {
+    padding-left: 0
+}
+
+.product-deatil .certified ul li:not(first-child) {
+    margin-left: -3px
+}
+
+.product-deatil .certified ul li {
+    display: inline-block;
+    background-color: #f9f9f9;
+    padding: 13px 19px
+}
+
+.product-deatil .certified ul li:first-child {
+    border-right: none
+}
+
+.product-deatil .certified ul li a {
+    text-align: left;
+    font-size: 12px;
+    color: #6d7a83;
+    line-height: 16px;
+    text-decoration: none
+}
+
+.product-deatil .certified ul li a span {
+    display: block;
+    color: #21c2f8;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center
+}
+
+.product-deatil .message-text {
+    width: calc(100% - 70px)
+}
+
+@media only screen and (min-width:1024px) {
+    .product-content div[class*=col-md-4] {
+        padding-right: 0
+    }
+    .product-content div[class*=col-md-8] {
+        padding: 0 13px 0 0
+    }
+    .product-wrap div[class*=col-md-5] {
+        padding-right: 0
+    }
+    .product-wrap div[class*=col-md-7] {
+        padding: 0 13px 0 0
+    }
+    .product-content .product-image {
+        border-right: 1px solid #dfe5e9
+    }
+    .product-content .product-info {
+        position: relative
+    }
+}
+
+.text-center{
+
+  padding: 40px;
+}
+
+/* ----------------------------------------------------Bill Styling--------------------------------------------------------------- */
+.ui-w-40 {
+  /* width: 40px !important; */
+  height: 50px;
+}
+
+.card{
+  box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);    
+}
+
+.ui-product-color {
+  display: inline-block;
+  overflow: hidden;
+  margin: .144em;
+  width: .875rem;
+  height: .875rem;
+  border-radius: 10rem;
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+  vertical-align: middle;
+}

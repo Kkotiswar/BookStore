@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>
+     </title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+   </head>
+
+   <style>
+       html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    height: 100vh;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: row;
+   /* justify-content: center;*/
+ /*   align-items: center; */
+ 
+    background-color: #60a9ff;
+    text-align: center;
+    text-transform: uppercase;
+    /* newly added */
+    justify-content: space-evenly;
+   
+}
+.first{
+    width: 1100px;
+    height:2200px;
+  /*  border: 2px solid blue;*/
+    padding: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-radius: 10px;
+ 
+ /*newly added*/
+    margin-right: 3px;
+    
+}
+
+.book1, .book2, .book3, .book4{
+    
+   /* width: 220px;*/
+    height: 360px;
+    
+    /*border: 2px solid black;*/
+   /* max-height: 500px;*/
+    border-bottom: 1px solid #e1f1ff;
+  /* new added*/
+  width:300px;
+  margin:30px 0;
+}
+
+img{
+    width: 200px;
+    height: 160px;
+    width:100%;
+    margin-bottom: 20px;
+}
+h2{
+    color:#888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+ul{
+    margin:18px 0 18px;
+    color:#016ff9;
+}
+li{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 3px 0;
+    border-top: 1px solid #e1f1ff;
+}
+span{
+    color:#016ff9;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.pricing-btn{
+    border:1px solid #9dd1ff;
+    border-radius: 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+    margin: 30px 20px;
+    transition:background-color 200ms ease-in-out;
+}
+
+.pricing-btn:hover, .pricing-btn:focus {
+    background-color: #e1f1ff;
+}
+
+/* newly added */
+.content{
+    width:200px;
+    margin-right: 10px;
+}
+.opt{
+    font-size: large;
+
+}
+a{
+    text-decoration: none;
+    color:#888;
+}
+h1{
+    font-size: larger;
+    font-weight: 600;
+}
+
+   </style>
+<body>
+
+    <div class ="content " style="display :inline">
+        <h1 style="margin-top:20px">content</h1>
+        <ul>
+            <li><h2 class="opt"><a href="/login">Login</a></h2></li>
+            <li><h2 class="opt"><a href="/signup">Sign Up</a></h2></li>
+            <li><h2 class="opt"><a href="/">Wishlist</a></h2></li>
+            <li><h2 class="opt"><a href="/recent" >Recent Orders</a></h2></li>
+            <li><h2 class="opt"><a href="/payment" >Payment</a></h2></li>
+            <li><h2 class="opt" id="cart"> <a href="/bill" >go to cart</a></h2></li>
+        </ul>
+    </div>
+
+   <div class="first" id="fir">
+       <div class="book1">
+           <img src="/images/7-open-book-png-image (1).png" alt="firstbook">
+           <h2>bookName</h2>
+           <ul>
+            <li class="category">category</li>
+            <li class="author">author</li>
+        </ul>
+        <span class="pricing">price</span>
+        <a href="#" class="pricing-btn">purchase</a>
+       </div>
+       <div class="book2">
+           <img src="/images/18-books-png-image-with-transparency-background (1).png" alt="secondbook">
+           <h2>bookName</h2>
+           <ul>
+            <li class="category">category</li>
+            <li class="author">author</li>
+        </ul>
+        <span class="pricing">price</span>
+        <a href="#" class="pricing-btn">purchase</a>
+        </div>
+       
+       <div class="book3">
+           <img src="/images/6-books-png-image-with-transparency-background.png" alt="thirdbook">
+           <h2>bookName</h2>
+           <ul>
+            <li class="category">category</li>
+            <li class="author">author</li>
+        </ul>
+        <span class="pricing">price</span>
+        <a href="#" class="pricing-btn">purchase</a>
+       </div>
+       <div class="book4">
+           <img src="/images/5-red-book-png-image-image.png" alt="fourthbook">
+           <h2>bookName</h2>
+           <ul>
+               <li class="category">category</li>
+               <li class="author">author</li>
+           </ul>
+           <span class="pricing">price</span>
+           <a href="#" class="pricing-btn">purchase</a>
+       </div>
+
+       <div class="book1">
+        <img src="/images/7-open-book-png-image (1).png" alt="firstbook">
+        <h2>bookName</h2>
+        <ul>
+         <li class="category">category</li>
+         <li class="author">author</li>
+     </ul>
+     <span class="pricing">price</span>
+     <a href="#" class="pricing-btn">purchase</a>
+    </div>
+    <div class="book2">
+        <img src="/images/18-books-png-image-with-transparency-background (1).png" alt="secondbook">
+        <h2>bookName</h2>
+        <ul>
+         <li class="category">category</li>
+         <li class="author">author</li>
+     </ul>
+     <span class="pricing">price</span>
+     <a href="#" class="pricing-btn">purchase</a>
+     </div>
+    
+    <div class="book3">
+        <img src="/images/6-books-png-image-with-transparency-background.png" alt="thirdbook">
+        <h2>bookName</h2>
+        <ul>
+         <li class="category">category</li>
+         <li class="author">author</li>
+     </ul>
+     <span class="pricing">price</span>
+     <a href="#" class="pricing-btn">purchase</a>
+    </div>
+    <div class="book4">
+        <img src="/images/5-red-book-png-image-image.png" alt="fourthbook">
+        <h2>bookName</h2>
+        <ul>
+            <li class="category">category</li>
+            <li class="author">author</li>
+        </ul>
+        <span class="pricing">price</span>
+        <a href="#" class="pricing-btn">purchase</a>
+    </div>
+    <div class="book1">
+        <img src="/images/7-open-book-png-image (1).png" alt="firstbook">
+        <h2>bookName</h2>
+        <ul>
+         <li class="category">category</li>
+         <li class="author">author</li>
+     </ul>
+     <span class="pricing">price</span>
+     <a href="#" class="pricing-btn">purchase</a>
+    </div>
+    <div class="book2">
+        <img src="/images/18-books-png-image-with-transparency-background (1).png" alt="secondbook">
+        <h2>bookName</h2>
+        <ul>
+         <li class="category">category</li>
+         <li class="author">author</li>
+     </ul>
+     <span class="pricing">price</span>
+     <a href="#" class="pricing-btn">purchase</a>
+     </div>
+    
+    <div class="book3">
+        <img src="/images/6-books-png-image-with-transparency-background.png" alt="thirdbook">
+        <h2>bookName</h2>
+        <ul>
+         <li class="category">category</li>
+         <li class="author">author</li>
+     </ul>
+     <span class="pricing">price</span>
+     <a href="#" class="pricing-btn">purchase</a>
+    </div>
+    <div class="book4">
+        <img src="/images/5-red-book-png-image-image.png" alt="fourthbook">
+        <h2>bookName</h2>
+        <ul>
+            <li class="category">category</li>
+            <li class="author">author</li>
+        </ul>
+        <span class="pricing">price</span>
+        <a href="#" class="pricing-btn">purchase</a>
+    </div>
+    <div class="book1">
+        <img src="/images/7-open-book-png-image (1).png" alt="firstbook">
+        <h2>bookName</h2>
+        <ul>
+         <li class="category">category</li>
+         <li class="author">author</li>
+     </ul>
+     <span class="pricing">price</span>
+     <a href="#" class="pricing-btn">purchase</a>
+    </div>
+    <div class="book2">
+        <img src="/images/18-books-png-image-with-transparency-background (1).png" alt="secondbook">
+        <h2>bookName</h2>
+        <ul>
+         <li class="category">category</li>
+         <li class="author">author</li>
+     </ul>
+     <span class="pricing">price</span>
+     <a href="#" class="pricing-btn">purchase</a>
+     </div>
+    
+    <div class="book3">
+        <img src="/images/6-books-png-image-with-transparency-background.png" alt="thirdbook">
+        <h2>bookName</h2>
+        <ul>
+         <li class="category">category</li>
+         <li class="author">author</li>
+     </ul>
+     <span class="pricing">price</span>
+     <a href="#" class="pricing-btn">purchase</a>
+    </div>
+   </div>
+
+   <br>
+   
+  
+   
+   
+
+</body>
+ </html>
