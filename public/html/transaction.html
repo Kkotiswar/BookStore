@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-image: url(/images/payment_bg_image.jpg);
+    }
+    .container {
+            border: 3px solid red;
+            width: 450px;
+            margin: auto;
+            font-family: 'Baloo Tammudu 2', cursive;
+            border-radius: 53px;
+            margin: 43px 523px;
+        }
+
+        .container form {
+            margin: auto;
+            /* border: 2px solid grey; */
+            padding: 58px 35px;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #0ae7f2;
+        }
+
+        .container div {
+            margin: 13px 24px;
+        }
+        .container label{
+            color: blanchedalmond;
+            margin: 31px;
+        }
+
+        .container input {
+
+            display: block;
+            margin: 14px auto;
+            border: 4px solid #7dfff7;
+            border-radius: 11px;
+            width: 329px;
+            text-align: center;
+            font-family: 'Baloo Tammudu 2', cursive;
+        }
+
+        .container button {
+            margin: auto;
+            font-family: 'Baloo Tammudu 2', cursive;
+        }
+        .container button{
+            display: block;
+    margin: 13px 2px;
+    width: 45;
+    width: 339px;
+    border: 4px solid #7dfff7;
+    border-radius: 11px;
+   
+    background-color: #a299f8;
+        }
+        .container button:hover{
+            cursor: pointer;
+            background-color: #ebadeb;
+        }
+        #paybutton{
+            display: flex;
+            margin: 1px 60px;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Card details</h1>
+        <hr>
+        <form >
+            <div class="form-group">
+                <input type="text" name="" placeholder="Name on card">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="card number">
+            </div>
+            <label for="Start date">Start date :</label>
+            <div class="form-group" id="s">
+                <input type="date" name="Start date" placeholder="">
+            </div>
+            <label for="Expiry date">Expiry date :</label>
+            <div class="form-group" id="e">
+                <input type="date" name="Expiry date" placeholder="Expiry date">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Security code">
+            </div>
+
+            <div>
+                
+                
+                <button type="reset">Reset Information</button>
+                
+            </div>
+        </form>
+        
+        
+         <div id="paybutton"> 
+             <a href="./paid.html"><button>pay</button></a>
+         </div>
+    </div>
+</body>
+</html>

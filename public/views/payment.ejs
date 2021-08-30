@@ -1,0 +1,186 @@
+<!-- <%- include("partials/header"); -%> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+
+<style>
+    body {
+        background: url(../public/images/photo-1534951009808-766178b47a4f.jpeg)no-repeat;
+        background-size: cover;
+
+    }
+
+    a{
+    text-decoration: none;
+    color:#888;
+    }
+
+    .container1 {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container2 {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container3 {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .boxes1 {
+        flex: auto;
+
+        margin: 23px 23px;
+        height: 219px;
+        width: 389px;
+    }
+
+    #heading h2 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        font-style: normal;
+        font-size: 53px;
+    }
+
+    .container1 div img {
+        height: 218px;
+        width: 447px;
+        border-radius: 6px;
+        border: 3px solid #773184;
+    }
+
+    .container1 div img:hover {
+        height: 208px;
+        width: 437px;
+
+        justify-items: center;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    .container2 div img {
+        height: 218px;
+        width: 447px;
+        border-radius: 6px;
+        border: 3px solid #773184;
+    }
+
+    .container2 div img:hover {
+        height: 208px;
+        width: 437px;
+        justify-items: center;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    .container3 div img {
+        height: 218px;
+        width: 447px;
+        border-radius: 6px;
+        border: 3px solid #773184;
+    }
+
+    .container3 div img:hover {
+        height: 208px;
+        width: 437px;
+        justify-items: center;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+</style>
+
+<body>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+                                       <!-- heading -->
+
+<div id="heading">
+    <h2>Payment Options</h2>
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+                                     <!-- upper 3 images -->
+
+<div class="container1">
+
+    <div class="boxes1" id="1">
+        <a href="/html/transaction.html" >
+        <img src="/images/credit_card.png" alt="">
+        </a>
+    </div>
+    <div class="boxes1" id="2">
+        <a href="/html/transaction.html" >
+        <img src="/images/debit_card.png" alt="">
+         </a>
+    </div>
+    <div class="boxes1" id="3">
+            <a href="/html/transaction.html" >
+            <img src="/images/gogle_vallet.png" alt="">
+            </a>
+    </div>
+</div>
+
+ <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+                                      <!-- middle 3 images -->
+
+<div class="container2">
+
+    <div class="boxes1" id="4">
+        <a href="/pay/html/transaction.htmlent" >
+            <img src="/images/pay_pal.png" alt="">
+            </a>
+    </div>
+    <div class="boxes1" id="5">
+        <a href="/html/transaction.html" >
+            <img src="/images/pay_point.png" alt="">
+            </a>
+    </div>
+    <div class="boxes1" id="6">
+        <a href="/html/transaction.html" >
+            <img src="/images/saga_pay.png" alt="">
+            </a>
+    </div>
+</div>
+
+
+ <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+                                            <!-- bottom 3 images -->
+<div class="container3">
+
+    <div class="boxes1" id="7">
+        <a href="/html/transaction.html" >
+            <img src="/images/UPI.png" alt="">
+            </a>
+    </div>
+    <div class="boxes1" id="8">
+        <a href="/html/transaction.html" >
+            <img src="/images/visa.png" alt="">
+            </a>
+    </div>
+    <div class="boxes1" id="9">
+        <a href="/html/transaction.html" >
+            <img src="/images/world_pay.png" alt="">
+            </a>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+<!-- <%- include("partials/footer"); -%>  -->
